@@ -1,5 +1,5 @@
-altair
+openpyxl
 numpy
 pandas
-pydeck
+
 streamlit
