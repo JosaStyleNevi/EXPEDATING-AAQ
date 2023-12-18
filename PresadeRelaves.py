@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 st.sidebar.title("ÁREA 4000:blossom::sunflower:")
 st.sidebar.header('PRESA DE RELAVES', divider='rainbow')
 
-selected_page = st.sidebar.selectbox('SELECCIONAR OPCIÓN', ['Control Compras', 'Control Materiales'])
+selected_page = st.sidebar.selectbox('SELECCIONAR OPCIÓN', ['Control Compras', 'Control Materiales', 'Generar Ranchos'])
 
 if selected_page == 'Control Compras':
     selected_subpage = st.sidebar.radio('OPCIONES DE CONTROL COMPRAS', ['EXPEDATING', 'RESERVAS', 'AVISOS'])
@@ -56,3 +56,83 @@ elif selected_page == 'Control Materiales':
 
     elif selected_subpage == 'DM05':
         st.title('MATERIALES EN CUSTODIO DM05')
+
+if selected_page == 'Generar Ranchos':
+    st.title('GENERAR RANCHOS')
+    if st.button('Generar'):
+        # Coloca aquí el código que deseas ejecutar al presionar el botón
+        import webbrowser
+        import keyboard
+        import time
+        import pyautogui
+        import pygetwindow as gw
+        time.sleep(3)
+        url = "https://forms.office.com/pages/responsepage.aspx?id=nfZkKMN3vk-7wJdQIFI5GqOGdNXWMNxJnfUE0mx-qChUQ1Y4WFNZVFVWUVBVMDQxV0FET1JJV0xEWC4u"
+        webbrowser.open_new(url)
+        time.sleep(3)
+        pyautogui.press('tab')
+        time.sleep(1)
+        pyautogui.press('tab')
+        time.sleep(1)
+        pyautogui.press('down')
+        time.sleep(1)
+        pyautogui.press('up')
+        time.sleep(1)
+        pyautogui.press('tab')
+        time.sleep(1)
+        pyautogui.typewrite('Jose Alonso Aguilar Hancco')
+        pyautogui.press('tab')
+        time.sleep(1)
+        pyautogui.typewrite('jose.aguilar')
+        keyboard.press_and_release('alt gr + q')
+        pyautogui.typewrite('angloamerican.com')
+        pyautogui.press('tab')
+        for _ in range(21):
+                pyautogui.press('down')
+        time.sleep(1)
+        pyautogui.press('enter')
+        pyautogui.press('tab')
+        for _ in range(3):
+                pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.typewrite('PECQI.220011-IMP-310')
+        pyautogui.press('tab')
+        for _ in range(56):
+                pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.press('tab')
+        for _ in range(4):
+                pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.press('tab')
+        pyautogui.typewrite('22')
+        pyautogui.press('tab')
+        pyautogui.press('down')
+        pyautogui.press('tab')
+        pyautogui.typewrite('autorización de 22 Ranchos Fríos para el personal Mecanico Horario extendido, fecha 15.12.2023, Trabajos: DESEMPERNADO DE LA LIJNEA DE 42" ESTRIBO DERECHO, RECRECIMIENTO CORONA')
+        time.sleep(1)
+        pyautogui.press('tab')
+        pyautogui.press('right')
+        pyautogui.press('left')
+        pyautogui.press('tab')
+        pyautogui.press('right')
+        pyautogui.press('left')
+        pyautogui.press('tab')
+        pyautogui.typewrite('15/12/2023')
+        pyautogui.press('tab')
+        pyautogui.typewrite('22')
+        pyautogui.press('tab')
+        pyautogui.typewrite('DAVID GODOY MEZA|ADM DE OBRA IMCO|CELULAR 942788444')
+        pyautogui.press('tab')
+        pyautogui.press('enter')
+        time.sleep(5)
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+        pyautogui.press('enter')
+        time.sleep(5)
+        #pyautogui.press('tab')
+        #pyautogui.press('tab')
+        #pyautogui.press('tab')
+        #pyautogui.press('enter')
+        #time.sleep(2)
