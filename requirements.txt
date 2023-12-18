@@ -3,6 +3,5 @@ numpy
 pandas
 streamlit
 keyboard
-time
 pyautogui
 pygetwindow
